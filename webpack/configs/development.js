@@ -16,14 +16,14 @@ module.exports = env => ({
         test: /\.scss$/,
         use: ['style-loader', 'css-loader', 'postcss-loader', 'sass-loader'],
       },
-      {
-        test: /\.js$/,
-        exclude: /node_modules/,
-        loader: 'eslint-loader',
-        options: {
-          quiet: true,
-        },
-      },
+      // {
+      //   test: /\.js$/,
+      //   exclude: /node_modules/,
+      //   loader: 'eslint-loader',
+      //   options: {
+      //     quiet: true,
+      //   },
+      // },
     ],
   },
   plugins: [
